@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     h1{
+        color: lightcoral;
+     }   
+     li{
+        color: purple;
+     }
+     #fruits-title{
+        color: black;
+     }
+     .item{
+        color: rgb(45, 28, 136);
+     }
+     .fruits-container li{
+       color: tomato;
+     }
+     .purple-bg{
+        background-color: purple !important;
+     }
+     .text-center{
+        text-align: center;
+     }
+     .large-text{
+        font-size: 20px;
+     }
+    </style>
+</head>
+<body>
+   <header>
+    <h1>Welcome to my DOM</h1>
+   </header>
+    <main id="main-content">
+     <section>
+        <h1>My Awesome DOM de baba</h1> 
+        <ul>
+          <li>Jankar hagolar set</li>
+          <li>Shafayat</li>
+          <li>Hagol</li>
+        </ul>   
+     </section>
+     <section>
+        <h1>My Awesome DOM de baba</h1> 
+        <ul>
+          <li>Jankar hagolar set</li>
+          <li>Shafayat</li>
+          <li>Hagol</li>
+        </ul>   
+     </section>
+     <section class="fruits-container"  id="">
+        <h1 id="fruits-title"    >Fruits I like</h1> 
+        <ul>
+          <li>Apple</li>
+          <li>Banana</li>
+          <li>Carrot</li>
+        </ul>   
+     </section>
+     <section id="places-container" class="large-text">
+        <h1 id="places-title">Places I like to visit</h1>
+        <ul id="item-list">
+            <li class="item">Soondarban</li>
+            <li class="item">bandoran</li>
+            <li class="item">Kataban</li>
+            <li class="item">Salbon</li>
+        </ul>
+     </section>
+    </main>
+    
+
+   <script>
+const sections=document.querySelectorAll('section');
+for (const section of sections){
+   section.style.border='2px solid blue';
+   section.style.backgroundColor="skyblue";
+}
+// const placesContainer=document.getElementById('places-container');
+// placesContainer.style.backgroundColor="purple";
+const placesContainer=document.getElementById('places-container');
+placesContainer.classList.add('text-center');
+placesContainer.classList.remove('large-text')
+
+
+const itemList=document.getElementById('item-list');
+// console.log(itemList);
+ const li=document.createElement('li');
+ li.innerText='pahartoli bon';
+ itemList.appendChild(li);
+
+
+// 
+const mainContainer=document.getElementById('main-content');
+// console.log(mainContainer);
+const section=document.createElement('section');
+const h1=document.createElement('h1');
+h1.innerText="My Food List";
+section.appendChild(h1);
+const ul=document.createElement('ul')
+const li1=document.createElement('li');
+li1.innerText="birany"
+ul.appendChild(li1);
+
+const li2=document.createElement('li')
+li2.innerText='Borhani'
+ul.appendChild(li2);
+
+const li3=document.createElement('li')
+li3.innerText='Kassi'
+ul.appendChild(li3);
+
+section.appendChild(ul);
+mainContainer.appendChild(section)
+
+const sectionDress=document.createElement('section');
+sectionDress.innerHTML=`
+<h1>My Dress section<h1>
+<ul>
+    <li>T-shirt</li>
+    <li>Lungi</li>
+    <li>punjabi</li>
+    </ul>
+
+`
+mainContainer.appendChild(sectionDress);
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // const liCollection=document.getElementsByTagName('li');
+    // // console.log(liCollection)
+    //  for (const li of liCollection){
+    //     console.log(li.innerText);
+    //  }
+    //  const allHeading=document.getElementsByTagName('h1');
+    //  for (const h1 of allHeading){
+    //     console.log(h1.innerText)
+    //  }
+
+//    const places=document.getElementsByClassName('item');
+//    for (const hanga of places){
+//     console.log(hanga.innerText);
+//    }
+  
+
+//    const fruitsTitle=document.getElementById('fruits-title');
+//    fruitsTitle.innerText="change title by javascript"
+// const someLi=document.querySelectorAll('.fruits-container li');
+// // console.log(someLi)
+//  for (const li of someLi){
+//     console.log(li.innerText);
+//  }
+//  const someLi=document.querySelector('.fruits-container li');
+// console.log(someLi);
+
+
+
+
+//  for (const li of someLi){
+//     console.log(li.innerText);
+//  }
+
+
+
+
+   </script>
+</body>
+</html>

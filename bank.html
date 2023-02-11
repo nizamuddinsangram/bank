@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Inside</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-6">Lets gets some <span class="font-semibold text-violet-600">Money</span></h1> 
+    </header>
+    <main>
+  <section class="mt-12">
+    <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white text-center">
+      <div class="bg-green-600 p-8 rounded-xl">
+        <h4 id="" class="text-3xl">Deposit</h4>
+        <h2 class="text-5xl">$00</h2>
+      </div>  
+     <div class="bg-yellow-500 p-8 rounded-xl">
+       <h4 id="" class="text-3xl">Withdraw</h4>
+       <h2 class="text-5xl">$00</h2>
+     </div> 
+
+     <div class="bg-violet-600 p-8 rounded-xl">
+        <h4 id="" class="text-3xl">Balance</h4>
+        <h2 class="text-5xl">$1200</h2>
+      </div>  
+      
+
+    </div>
+  </section>
+  <!-- deposit and withdraw -->
+  <section class='mt-12'>
+    <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto  text-center">
+        <div class="bg-fuchsia-600 p-8 rounded-xl">
+          <h4 class="text-3xl mb-4 text-white">Please Deposit</h4>
+            <input  type="text" class="rounded-md w-9/12 block mb-3 px-3" id="deposit-field" placeholder="$ Amount You want to Deposit ">
+            <button id="btn-deposit" class="rounded-lg hover:bg-amber-700 bg-amber-600 px-8 py-2 text-black font-medium">Deposit</button>
+        </div>  
+
+       <div class="bg-sky-500 p-8 rounded-xl">
+         <h4 class="text-3xl mb-4 text-white">Donot Withdraw</h4>
+         <input id="withdrow-field" type="text" class="rounded-md w-9/12 block mb-3 px-3 " placeholder="$ Amount you want to Withdraw">
+         <button id="btn-withdraw" class="rounded-lg hover:bg-amber-700 bg-amber-600 px-8 py-2 text-black font-medium">Withdraw</button>
+       </div> 
+   </div>
+      
+  </section>
+    </main>
+    
+<script src="bank.js"></script>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
